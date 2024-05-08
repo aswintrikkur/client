@@ -1,0 +1,78 @@
+.home-container {
+	position: relative;
+
+	.section1 {
+		height: 816px;
+		background: url("/images/image1.png");
+
+		.content {
+			width: 1052px;
+			height: 820px;
+			padding-left: 170px;
+			padding-top: 300px;
+			background: linear-gradient(90deg, rgba(241, 241, 241, 1), rgba(217, 217, 217, 0));
+
+			h3 {
+				margin-bottom: 23px;
+				color: rgba(29, 46, 52, 1);
+			}
+			h1 {
+				max-width: 476px;
+				color: rgba(53, 98, 111, 1);
+			}
+		}
+	}
+
+	.cloud-border {
+		position: absolute;
+		top: 654px;
+
+		.cloud2 {
+			position: absolute;
+			z-index: 3;
+		}
+	}
+
+	.section2 {
+		z-index: 4;
+		// position: absolute;
+		position: relative;
+
+		.cloud3 {
+			position: absolute;
+			top: -100px;
+			z-index: 4;
+		}
+		.cloud4 {
+			position: absolute;
+			top: -100px;
+			z-index: 3;
+		}
+
+		.bg-lines {
+			position: absolute;
+			top: -100px;
+			z-index: 5;
+		}
+		.second-image,
+		.content,
+		.vector1 {
+			position: absolute;
+			z-index: 5;
+		}
+
+		.second-image {
+			top: 260px;
+			left: 75px;
+		}
+		.content {
+			right: 170px;
+			top: 217px;
+			max-width: 476px;
+		}
+		.vector1 {
+			top: 50px;
+			z-index: 4;
+		}
+	}
+}

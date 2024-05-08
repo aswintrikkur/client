@@ -1,0 +1,21 @@
+:root {
+	//    ------------------------- colors --------------------
+	--bg-color-primary: white;
+
+	--text-color-primary: black;
+
+	--highlight-primary: rgba(47, 83, 93, 1);
+
+
+
+	//--------------------------- fonts--------------------------------
+
+    @font-face {
+        font-family: 'rosemary';
+        src: url('/src/assets/Rosemary\ 400.ttf');
+    }
+    @font-face {
+        font-family: 'little daisy';
+        src: url('/src/assets/Little\ Daisy.ttf');
+    }
+}
