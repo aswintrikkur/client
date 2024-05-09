@@ -1,9 +1,11 @@
 .home-container {
 	position: relative;
 
-	.section1 {
-		height: 816px;
+	// -------------------------- Home ---------------------------
+	.home {
+		height: 820px;
 		background: url("/images/image1.png");
+		position: relative;
 
 		.content {
 			width: 1052px;
@@ -21,22 +23,19 @@
 				color: rgba(53, 98, 111, 1);
 			}
 		}
-	}
-
-	.cloud-border {
-		position: absolute;
-		top: 654px;
-
 		.cloud2 {
 			position: absolute;
+			bottom: -100px;
 			z-index: 3;
 		}
 	}
 
-	.section2 {
+	// -------------------------- About us ---------------------------
+	.about-us {
 		z-index: 4;
-		// position: absolute;
 		position: relative;
+		// position: absolute;
+		height: 680px;
 
 		.cloud3 {
 			position: absolute;
@@ -56,23 +55,227 @@
 		}
 		.second-image,
 		.content,
-		.vector1 {
+		.vector1,
+		.vector2 {
 			position: absolute;
 			z-index: 5;
 		}
 
 		.second-image {
-			top: 260px;
+			top: 160px;
 			left: 75px;
-		}
-		.content {
-			right: 170px;
-			top: 217px;
-			max-width: 476px;
 		}
 		.vector1 {
 			top: 50px;
 			z-index: 4;
 		}
+		.vector2 {
+			top: 76px;
+			right: 232px;
+		}
+		.content {
+			// right: 170px;
+			left: 790px;
+			top: 217px;
+			width: 476px;
+
+			h1 {
+				color: rgba(140, 161, 65, 1);
+				margin-top: 15px;
+				margin-bottom: 36px;
+			}
+			h4 {
+				color: rgba(37, 37, 37, 1);
+			}
+			p {
+				color: rgba(37, 37, 37, 0.8);
+			}
+		}
+	}
+
+	// -------------------------- Why Choose Us ---------------------------
+	.why-choose-us {
+		// max-width: 1440px;
+		// position: absolute;
+		position: relative;
+		z-index: 6;
+		height: 760px;
+		// top: 1523px;
+
+		.bg-shade1,
+		.cloud-left,
+		.cloud-right,
+		.child-vector1,
+		.child-vector2,
+		.image-third,
+		.content {
+			position: absolute;
+			z-index: 6;
+		}
+		.cloud-right {
+			left: 1030px;
+			top: -56px;
+		}
+		.cloud-left {
+			top: 565px;
+			left: 0;
+		}
+		.image-third {
+			top: 205px;
+			left: 745px;
+		}
+		.child-vector1 {
+			left: 181px;
+			top: 141px;
+		}
+		.child-vector2 {
+			left: 1111px;
+			top: 607px;
+		}
+
+		.content {
+			width: 476px;
+			position: absolute;
+			left: 230px;
+			top: 300px;
+
+			h4 {
+				color: rgba(37, 37, 37, 1);
+			}
+			h1 {
+				color: rgba(84, 149, 163, 1);
+				margin-top: 15px;
+				margin-bottom: 36px;
+			}
+			p {
+				width: 85%;
+				text-align: left;
+				color: rgba(37, 37, 37, 0.8);
+			}
+		}
+	}
+
+	// -------------------------- Programs ---------------------------
+	.programs {
+		// position: absolute;
+		position: relative;
+		width: 1440px;
+		z-index: 7;
+		margin-top: 100px;
+		// top: 2390px;
+		// left: 619px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		h1 {
+			// justify-self: center;
+
+			color: rgba(140, 161, 65, 1);
+		}
+		.cards-container {
+			margin-top: 65px;
+			margin-bottom: 60px;
+			display: flex;
+			gap: 25px;
+			z-index: 7;
+		}
+		.cloud-lg-right {
+			position: absolute;
+			// bottom: 108px;
+			bottom: -100px;
+			right: 0;
+		}
+		.vector-line-plane {
+			position: absolute;
+			top: -120px;
+			left: 355px;
+			z-index: 4;
+		}
+	}
+
+	// -------------------------- get in touch ---------------------------
+	.get-in-touch {
+		z-index: 7;
+		text-align: center;
+		margin-top: 150px;
+        padding-bottom: 100px;
+		position: relative;
+
+		> h1 {
+			color: rgba(140, 161, 65, 1);
+		}
+
+		.content {
+			margin-top: 64px;
+			display: flex;
+			justify-content: center;
+			// align-items: center;
+			gap: 32px;
+			// z-index: 10;
+
+			.col1 {
+				width: 400px;
+				height: 472px;
+				background-color: rgba(218, 227, 179, 1);
+				// opacity: .7;
+				border-radius: 20px;
+				text-align: start;
+				padding: 10px 40px;
+
+				h3 {
+					font-size: 24px;
+					color: rgba(83, 98, 41, 1);
+					margin-bottom: 26px;
+					margin-top: 37px;
+				}
+
+				.row {
+					display: flex;
+					// align-items: center;
+					justify-content: start;
+					gap: 10px;
+					margin-bottom: 20px;
+
+					h4 {
+						color: rgba(37, 37, 37, 0.75);
+						line-height: 26px;
+						span {
+							color: rgba(37, 37, 37, 1);
+						}
+					}
+					> img {
+						width: 20px;
+						height: 20px;
+						object-fit: contain;
+					}
+				}
+				p {
+					margin: 20px 0;
+					color: rgba(37, 37, 37, 0.75);
+				}
+			}
+			.col2 {
+				// z-index: 6;
+
+				.row {
+					display: flex;
+					gap: 10px;
+					margin-bottom: 35px;
+				}
+			}
+		}
+
+        h1.contact-us{
+            margin-top: 100px;
+            margin-bottom: 45px;
+        }
+        >p{
+            // width: 628px;
+            font-size: 16px;
+            color: rgba(37, 37, 37, 0.8);
+            margin-bottom: 45px;
+            // text-align: center;
+        }
 	}
 }

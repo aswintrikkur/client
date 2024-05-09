@@ -1,0 +1,27 @@
+.input-container {
+	input {
+		width: 330px;
+		height: 70px;
+		border-radius: 20px;
+		padding-left: 40px;
+		background-color: rgba(218, 227, 179, 1);
+		color: rgba(37, 37, 37, 0.5);
+		font-family: "rosemary";
+		font-size: 16px;
+		border: none;
+		outline: none;
+	}
+	textarea {
+		width: 670px;
+		height: 165px;
+		border-radius: 20px;
+		padding-left: 40px;
+        padding-top: 23px;
+		background-color: rgba(218, 227, 179, 1);
+		color: rgba(37, 37, 37, 0.5);
+		font-family: "rosemary";
+		font-size: 16px;
+		border: none;
+		outline: none;
+	}
+}

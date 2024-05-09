@@ -1,0 +1,30 @@
+.card-container {
+
+    width: 350px;
+
+	.img-container {
+		width: 350px;
+		height: 220px;
+		background-color: rgba(236, 240, 215, 1);
+		border-radius: 20px;
+        z-index: 5;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	h2 {
+		color: rgba(163, 183, 84, 1);
+        margin-top: 16px;
+        margin-bottom: 26px;
+        font-family: 'little daisy';
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 6%;
+        line-height: 40px;
+	}
+	p {
+		color: rgba(37, 37, 37, 0.8);
+	}
+}
