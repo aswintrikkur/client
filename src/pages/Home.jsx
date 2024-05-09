@@ -10,7 +10,7 @@ export const Home = () => {
 		<Container>
 			<div className="home-container">
 				{/* ------------------- section1 / Home ---------------- */}
-				<section className="home">
+				<section className="home" id="home">
 					<div className="content">
 						<h3>Children's nursery</h3>
 						<h1>Lorem Ipsum Is Simply Dummy text</h1>
@@ -19,7 +19,7 @@ export const Home = () => {
 				</section>
 
 				{/* ------------------- section2 / About us ---------------- */}
-				<section className="about-us">
+				<section className="about-us" id="about-us">
 					<img src="/images/cloud3.png" alt="cloud3" className="cloud3" />
 					<img src="/images/cloud4.png" alt="cloud4" className="cloud4" />
 					<img src="/images/bg-lines.png" alt="bg-lines" className="bg-lines" />
@@ -38,7 +38,7 @@ export const Home = () => {
 				</section>
 
 				{/* ------------------- section3 / why choose us ---------------- */}
-				<section className="why-choose-us">
+				<section className="why-choose-us" >
 					<img src="/images/bg-shade1.png" alt="bg-shade" className="bg-shade1" />
 					<img src="/images/cloud-md-right.png" alt="cloud-right" className="cloud-right" />
 					<img src="/images/cloud-lg-left.png" alt="cloud-left" className="cloud-left" />
@@ -57,7 +57,7 @@ export const Home = () => {
 				</section>
 
 				{/* ------------------- section4 / Programs ---------------- */}
-				<section className="programs">
+				<section className="programs" id="programs">
 					<h1>Programs</h1>
 					<div className="cards-container">
 						<Card src="/images/program1.png" />
@@ -70,7 +70,7 @@ export const Home = () => {
 				</section>
 
 				{/* ------------------- section5 / get in touch  ---------------- */}
-				<section className="get-in-touch">
+				<section className="get-in-touch" id="contact-us" >
 					<h1>Get In Touch</h1>
 
 					<div className="content">

@@ -28,14 +28,32 @@
 		display: flex;
 		align-items: center;
 		gap: 62px;
-
+		
 		font-size: 16px;
-		p {
+		a {
+			color: var(--highlight-primary);
+			// color: red;
+			text-decoration: none;
+			font-family: "rosemary";
+			font-size: 16px;
+			line-height: 22px;
+			
 			&:first-child {
+					padding: 4px 22px;
+					border-radius: 20px;
+					background-color: var(--highlight-primary);
+				color: white;
+			}
+			
+			&:hover{
+				cursor: pointer;
+			}
+			&:active{
 				padding: 4px 22px;
 				border-radius: 20px;
 				background-color: var(--highlight-primary);
 				color: white;
+
 			}
 		}
 	}
