@@ -33,7 +33,7 @@ export const Footer = () => {
 				<div className="col3">
 					<h3>Find Us On</h3>
 					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1961.7456698953079!2d76.27242632589285!3d10.461878466230623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7fa8243d5e6eb%3A0x9496e1214ccaebb5!2s!5e0!3m2!1sen!2sin!4v1698411259611!5m2!1sen!2sin"
+						src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=52.70967533219885, -8.020019531250002&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
 						style={{
 							width: "300px",
 							height: "140px",
@@ -46,11 +46,11 @@ export const Footer = () => {
 					></iframe>
 				</div>
 			</div>
-            <br />
+			<br />
 			<hr />
 			<div className="row2">
-                <h4>Copyright © 2024. All Rights Reserved. Developed by Ginger Technologies.</h4>
-            </div>
+				<h4>Copyright © 2024. All Rights Reserved. Developed by Ginger Technologies.</h4>
+			</div>
 		</div>
 	);
 };

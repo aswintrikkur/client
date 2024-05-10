@@ -52,8 +52,12 @@
 			}
 		}
 		.lan {
-			font-size: 12px;
+			display: flex;
+			align-items: center;
 			z-index: 2;
+			p{
+				font-size: 12px;
+			}
 		}
 	}
 	.active{

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Header.scss";
+import Switch from "react-switch";
 
 export const Header = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +25,16 @@ export const Header = () => {
 				<a href="#">Gallery</a>
 				<a href="#">Careers</a>
 				<a href="#contact-us">Contact Us</a>
-				<p className="lan">Engilsh</p>
+				<div className="lan">
+					<p>English</p>
+					<Switch
+						className="toggle-button"
+						checked
+						checkedIcon
+						onColor="#A4CAD3"
+						onHandleColor="#2F535D"
+					/>
+				</div>
 			</div>
 		</div>
 	);
