@@ -294,6 +294,9 @@
 	section {
 		width: min(1440px, 100vw);
 	}
+	section:not(.home) {
+		padding: 0 50px;
+	}
 
 	// -------------------------- Home ---------------------------
 	.home {
@@ -338,7 +341,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
-		padding: 0 50px;
+		// padding: 0 50px;
 		// flex-wrap: wrap-reverse;
 
 		gap: 50px;
@@ -401,22 +404,26 @@
 
 	// -------------------------- Why Choose Us ---------------------------
 	.why-choose-us {
-		// max-width: 1440px;
-		// position: absolute;
 		position: relative;
+		// overflow: hidden;
 		z-index: 6;
-		height: 760px;
-		// top: 1523px;
+		min-height: 760px;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		gap: 50px;
+
+		// background: url("/images/bg-shade1.png");
 
 		.bg-shade1,
 		.cloud-left,
-		.cloud-right,
-		.child-vector1,
-		.child-vector2,
-		.image-third,
-		.content {
+		.cloud-right {
 			position: absolute;
 			z-index: 6;
+		}
+		.bg-shade1 {
+			// height: 200vh;
 		}
 		.cloud-right {
 			left: 1030px;
@@ -426,24 +433,39 @@
 			top: 565px;
 			left: 0;
 		}
-		.image-third {
-			top: 205px;
-			left: 745px;
-		}
 		.child-vector1 {
-			left: 181px;
-			top: 141px;
+			z-index: 6;
+			position: absolute;
+			top: -120px;
+			// margin-bottom: 30px;
 		}
-		.child-vector2 {
-			left: 1111px;
-			top: 607px;
+		.image-container {
+			position: relative;
+			display: flex;
+			width: clamp(500px, 50%, 515px);
+
+			.child-vector2 {
+				z-index: 6;
+				position: absolute;
+				right: 50px;
+				bottom: -150px;
+			}
+			.image-third {
+				position: relative;
+				z-index: 6;
+				width: 100%;
+				// top: 205px;
+				// left: 745px;
+			}
 		}
 
 		.content {
-			width: 476px;
-			position: absolute;
-			left: 230px;
-			top: 300px;
+			position: relative;
+			z-index: 6;
+			max-width: 476px;
+			// position: absolute;
+			// left: 230px;
+			// top: 300px;
 
 			h4 {
 				color: rgba(37, 37, 37, 1);
@@ -463,35 +485,34 @@
 
 	// -------------------------- Programs ---------------------------
 	.programs {
-		// position: absolute;
 		position: relative;
-		width: 1440px;
 		z-index: 7;
 		margin-top: 100px;
-		// top: 2390px;
-		// left: 619px;
+
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 
 		h1 {
-			// justify-self: center;
-
 			color: rgba(140, 161, 65, 1);
 		}
 		.cards-container {
 			margin-top: 65px;
-			margin-bottom: 60px;
 			display: flex;
+			justify-content: center;
 			flex-wrap: wrap;
 			gap: 25px;
 			z-index: 7;
+
+			> div {
+				margin-bottom: 60px;
+			}
 		}
 		.cloud-lg-right {
 			position: absolute;
-			// bottom: 108px;
 			bottom: -100px;
 			right: 0;
+			z-index: 3;
 		}
 		.vector-line-plane {
 			position: absolute;
@@ -506,7 +527,6 @@
 		z-index: 7;
 		text-align: center;
 		margin-top: 150px;
-		padding-bottom: 100px;
 		position: relative;
 
 		> h1 {
@@ -516,74 +536,81 @@
 		.content {
 			margin-top: 64px;
 			display: flex;
+			align-items: center;
 			justify-content: center;
 			flex-wrap: wrap;
-			// align-items: center;
 			gap: 32px;
-			// z-index: 10;
 
 			.col1 {
-				width: 400px;
-				height: 472px;
-				background-color: rgba(218, 227, 179, 1);
-				// opacity: .7;
-				border-radius: 20px;
-				text-align: start;
-				padding: 10px 40px;
+				flex: 1;
+				display: flex;
+				justify-content: center;
 
-				h3 {
-					font-size: 24px;
-					color: rgba(83, 98, 41, 1);
-					margin-bottom: 26px;
-					margin-top: 37px;
-				}
+				.contact-card {
+					min-width: 400px;
+					width: 70%;
+					height: 472px;
+					background-color: rgba(218, 227, 179, 1);
+					border-radius: 20px;
+					text-align: start;
+					padding: 10px 40px;
 
-				.row {
-					display: flex;
-					// align-items: center;
-					justify-content: start;
-					gap: 10px;
-					margin-bottom: 20px;
+					h3 {
+						font-size: 24px;
+						color: rgba(83, 98, 41, 1);
+						margin-bottom: 26px;
+						margin-top: 37px;
+					}
 
-					h4 {
-						color: rgba(37, 37, 37, 0.75);
-						line-height: 26px;
-						span {
-							color: rgba(37, 37, 37, 1);
+					.row {
+						display: flex;
+						justify-content: start;
+						gap: 10px;
+						margin-bottom: 20px;
+
+						h4 {
+							color: rgba(37, 37, 37, 0.75);
+							line-height: 26px;
+							span {
+								color: rgba(37, 37, 37, 1);
+							}
+						}
+						> img {
+							width: 20px;
+							height: 20px;
+							object-fit: contain;
 						}
 					}
-					> img {
-						width: 20px;
-						height: 20px;
-						object-fit: contain;
+					p {
+						margin: 20px 0;
+						color: rgba(37, 37, 37, 0.75);
 					}
-				}
-				p {
-					margin: 20px 0;
-					color: rgba(37, 37, 37, 0.75);
 				}
 			}
 			.col2 {
 				// z-index: 6;
+				flex: 1;
 
 				.row {
 					display: flex;
+
 					gap: 10px;
 					margin-bottom: 35px;
 				}
 			}
 		}
 
-		h1.contact-us {
-			margin-top: 100px;
-			margin-bottom: 45px;
-		}
-		> p {
-			// width: 628px;
-			font-size: 16px;
-			color: rgba(37, 37, 37, 0.8);
-			margin-bottom: 45px;
-			// text-align: center;
+		.contact-us {
+			padding-bottom: 50px;
+			h1 {
+				margin-top: 100px;
+				margin-bottom: 45px;
+			}
+			> p {
+				font-size: 16px;
+				color: rgba(37, 37, 37, 0.8);
+				margin-bottom: 45px;
+			}
 		}
 	}
 }
@@ -642,189 +669,93 @@
 
 		// -------------------------- Why Choose Us ---------------------------
 		.why-choose-us {
-			// max-width: 1440px;
-			// position: absolute;
-			position: relative;
-			z-index: 6;
-			height: 760px;
-			// top: 1523px;
+			margin-top: 170px;
+			flex-direction: column;
+			gap: 0;
 
 			.bg-shade1,
 			.cloud-left,
-			.cloud-right,
-			.child-vector1,
-			.child-vector2,
-			.image-third,
-			.content {
+			.cloud-right {
 				position: absolute;
 				z-index: 6;
 			}
+			.bg-shade1 {
+				top: -170px;
+				height: 140%;
+			}
 			.cloud-right {
-				left: 1030px;
-				top: -56px;
 			}
 			.cloud-left {
-				top: 565px;
-				left: 0;
-			}
-			.image-third {
-				top: 205px;
-				left: 745px;
 			}
 			.child-vector1 {
-				left: 181px;
-				top: 141px;
 			}
-			.child-vector2 {
-				left: 1111px;
-				top: 607px;
-			}
+			.image-container {
+				width: clamp(300px, 80%, 450px);
+				align-self: flex-end;
 
+				.child-vector2 {
+				}
+				.image-third {
+					width: 100%;
+				}
+			}
 			.content {
-				width: 476px;
-				position: absolute;
-				left: 230px;
-				top: 300px;
-
-				h4 {
-					color: rgba(37, 37, 37, 1);
-				}
-				h1 {
-					color: rgba(84, 149, 163, 1);
-					margin-top: 15px;
-					margin-bottom: 36px;
-				}
-				p {
-					width: 85%;
-					text-align: left;
-					color: rgba(37, 37, 37, 0.8);
-				}
+				align-self: flex-start;
 			}
 		}
-
 		// -------------------------- Programs ---------------------------
 		.programs {
-			// position: absolute;
-			position: relative;
-			width: 1440px;
-			z-index: 7;
-			margin-top: 100px;
-			// top: 2390px;
-			// left: 619px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
+			margin-top: 220px;
 
 			h1 {
-				// justify-self: center;
-
-				color: rgba(140, 161, 65, 1);
 			}
 			.cards-container {
-				margin-top: 65px;
-				margin-bottom: 60px;
-				display: flex;
-				flex-wrap: wrap;
-				gap: 25px;
-				z-index: 7;
 			}
 			.cloud-lg-right {
-				position: absolute;
-				// bottom: 108px;
-				bottom: -100px;
-				right: 0;
 			}
 			.vector-line-plane {
-				position: absolute;
-				top: -120px;
-				left: 355px;
-				z-index: 4;
 			}
 		}
 
 		// -------------------------- get in touch ---------------------------
 		.get-in-touch {
-			z-index: 7;
-			text-align: center;
-			margin-top: 150px;
-			padding-bottom: 100px;
-			position: relative;
 
 			> h1 {
-				color: rgba(140, 161, 65, 1);
 			}
 
 			.content {
-				margin-top: 64px;
-				display: flex;
-				justify-content: center;
-				flex-wrap: wrap;
-				// align-items: center;
-				gap: 32px;
-				// z-index: 10;
 
 				.col1 {
-					width: 400px;
-					height: 472px;
-					background-color: rgba(218, 227, 179, 1);
-					// opacity: .7;
-					border-radius: 20px;
-					text-align: start;
-					padding: 10px 40px;
+					.contact-card {
 
-					h3 {
-						font-size: 24px;
-						color: rgba(83, 98, 41, 1);
-						margin-bottom: 26px;
-						margin-top: 37px;
-					}
+						h3 {
+						}
 
-					.row {
-						display: flex;
-						// align-items: center;
-						justify-content: start;
-						gap: 10px;
-						margin-bottom: 20px;
+						.row {
 
-						h4 {
-							color: rgba(37, 37, 37, 0.75);
-							line-height: 26px;
-							span {
-								color: rgba(37, 37, 37, 1);
+							h4 {
+								span {
+								}
+							}
+							> img {
 							}
 						}
-						> img {
-							width: 20px;
-							height: 20px;
-							object-fit: contain;
+						p {
 						}
-					}
-					p {
-						margin: 20px 0;
-						color: rgba(37, 37, 37, 0.75);
 					}
 				}
 				.col2 {
-					// z-index: 6;
 
 					.row {
-						display: flex;
-						gap: 10px;
-						margin-bottom: 35px;
 					}
 				}
 			}
 
-			h1.contact-us {
-				margin-top: 100px;
-				margin-bottom: 45px;
-			}
-			> p {
-				// width: 628px;
-				font-size: 16px;
-				color: rgba(37, 37, 37, 0.8);
-				margin-bottom: 45px;
-				// text-align: center;
+			.contact-us {
+				h1 {
+				}
+				> p {
+				}
 			}
 		}
 	}
@@ -837,15 +768,17 @@
 				text-align: center;
 			}
 		}
-		.about-us{
+		.about-us {
 			text-align: center;
-			.second-image{
-				
+			.second-image {
 				align-self: center;
 			}
-			.content{
+			.content {
 				align-self: center;
 			}
+		}
+
+		.why-choose-us {
 		}
 	}
 }

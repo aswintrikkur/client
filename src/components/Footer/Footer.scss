@@ -57,16 +57,18 @@
 
 @media only screen and (max-width: 1025px) {
 	.footer-contaier {
-		// padding: 0;
-        padding: 10% 20%;
-		// background-color: red;
-
+		padding: 0;
+        padding: 10% 10%;
+        
 		.row1 {
+            align-items: center;
             flex-wrap: wrap;
-			gap: 80px;
+			gap: 35px;
 
-			.col3 {
-				margin-left: 0px;
+
+			.col3 {                
+				margin-left:100%;
+                translate: -100% 0;
 			}
 		}
 

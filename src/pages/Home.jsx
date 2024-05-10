@@ -42,10 +42,8 @@ export const Home = () => {
 					<img src="/images/bg-shade1.png" alt="bg-shade" className="bg-shade1" />
 					<img src="/images/cloud-md-right.png" alt="cloud-right" className="cloud-right" />
 					<img src="/images/cloud-lg-left.png" alt="cloud-left" className="cloud-left" />
-					<img src="/images/child-vector1.png" alt="child-vector1" className="child-vector1" />
-					<img src="/images/child-vector2.png" alt="child-vector2" className="child-vector2" />
-					<img src="/images/image-third.png" alt="image-third" className="image-third" />
 					<div className="content">
+						<img src="/images/child-vector1.png" alt="child-vector1" className="child-vector1" />
 						<h4>Why Choose Us</h4>
 						<h1>Lorem Ipsum Is Simply Dummy text</h1>
 						<p>
@@ -53,6 +51,10 @@ export const Home = () => {
 							beenthe industry's standard dummy text ever since the1500s, when an unkn own printer took a
 							galley oftype and scrambled it to make a type specimen book
 						</p>
+					</div>
+					<div className="image-container">
+						<img src="/images/child-vector2.png" alt="child-vector2" className="child-vector2" />
+						<img src="/images/image-third.png" alt="image-third" className="image-third" />
 					</div>
 				</section>
 
@@ -75,35 +77,37 @@ export const Home = () => {
 
 					<div className="content">
 						<div className="col1">
-							<h3>Connect With Us</h3>
-							<div className="row1 row">
-								<img src="/icons/icon1.png" alt="" />
-								<h4>
-									Location:
-									<span>
-										{" "}
-										City, Country <br />
-										Building 00 <br />
-										Street 000
-									</span>
-								</h4>
-							</div>
-							<div className="row2 row">
-								<img src="/icons/icon2.png" alt="" />
-								<h4>
-									Call Us: <span>000000 000000</span>
-								</h4>
-							</div>
-							<div className="row3 row">
-								<img src="/icons/icon3.png" alt="" />
-								<h4>
-									E-mail Us: <span>dummymail.com</span>
-								</h4>
-							</div>
+							<div className="contact-card">
+								<h3>Connect With Us</h3>
+								<div className="row1 row">
+									<img src="/icons/icon1.png" alt="" />
+									<h4>
+										Location:
+										<span>
+											{" "}
+											City, Country <br />
+											Building 00 <br />
+											Street 000
+										</span>
+									</h4>
+								</div>
+								<div className="row2 row">
+									<img src="/icons/icon2.png" alt="" />
+									<h4>
+										Call Us: <span>000000 000000</span>
+									</h4>
+								</div>
+								<div className="row3 row">
+									<img src="/icons/icon3.png" alt="" />
+									<h4>
+										E-mail Us: <span>dummymail.com</span>
+									</h4>
+								</div>
 
-							<h3>Working Hours</h3>
-							<span>8:30 am - 3:30 pm</span>
-							<p>Sunday were closed</p>
+								<h3>Working Hours</h3>
+								<span>8:30 am - 3:30 pm</span>
+								<p>Sunday were closed</p>
+							</div>
 						</div>
 						<div className="col2">
 							<div className="row1 row">
@@ -120,13 +124,14 @@ export const Home = () => {
 							<Button text="Submit" />
 						</div>
 					</div>
-
-					<h1 className="contact-us">Contact Us</h1>
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. LoremIpsum has <br />{" "}
-						beenthe industry's standard dummy text ever since the1500s
-					</p>
-					<Button text="Contact Us" />
+					<div className="contact-us">
+						<h1 className="">Contact Us</h1>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. LoremIpsum has{" "}
+							<br /> beenthe industry's standard dummy text ever since the1500s
+						</p>
+						<Button text="Contact Us" />
+					</div>
 				</section>
 			</div>
 		</Container>

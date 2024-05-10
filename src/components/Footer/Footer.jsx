@@ -35,7 +35,7 @@ export const Footer = () => {
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1961.7456698953079!2d76.27242632589285!3d10.461878466230623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7fa8243d5e6eb%3A0x9496e1214ccaebb5!2s!5e0!3m2!1sen!2sin!4v1698411259611!5m2!1sen!2sin"
 						style={{
-							width: "320px",
+							width: "300px",
 							height: "140px",
 							border: "0",
 							allowFullScreen: "",

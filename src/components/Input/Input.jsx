@@ -7,7 +7,7 @@ export const Input = ({ type, placeholder }) => {
 			{type == "text-area" ? (
 				<textarea defaultValue={placeholder} ></textarea>
 			) : (
-				<input type={type} placeholder={placeholder} />
+				<input type={type}  placeholder={placeholder} />
 			)}
 		</div>
 	);
