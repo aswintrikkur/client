@@ -1,5 +1,29 @@
 .higher-order-container {
 	width: 1440px;
-
+	max-width: 100vw;
+	// width: min(100vw, 1440px);
+	min-height: 100vh;
+	overflow: hidden;
 	background-color: rgba(247, 249, 236, 1);
+	// background-color: chartreuse;
+	position: relative;
+}
+
+
+// ====================================== breakpoint 1 / 1025px =================================
+@media only screen and (max-width: 1025px) {
+	.higher-order-container{
+
+		// max-width: 100vw;
+	}
+	
+}
+
+// ====================================== breakpoint 2 /725px =================================
+@media only screen and (max-width:725px) {
+	.higher-order-container{
+
+		// max-width: 100vw;
+	}
+	
 }

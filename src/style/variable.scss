@@ -6,16 +6,19 @@
 
 	--highlight-primary: rgba(47, 83, 93, 1);
 
-
+	//---------------------------breakpoints -------------------------
+	--break-point1: 1025px;
+	--break-point2: 725px;
 
 	//--------------------------- fonts--------------------------------
 
-    @font-face {
-        font-family: 'rosemary';
-        src: url('/src/assets/Rosemary\ 400.ttf');
-    }
-    @font-face {
-        font-family: 'little daisy';
-        src: url('/src/assets/Little\ Daisy.ttf');
-    }
+	@font-face {
+		font-family: "rosemary";
+		src: url("/src/assets/Rosemary\ 400.ttf");
+	}
+	@font-face {
+		font-family: "little daisy";
+		// src: url('/src/assets/Little\ Daisy.ttf') format('.ttf');
+		src: url("/src//assets/Little\ Daisy.ttf");
+	}
 }

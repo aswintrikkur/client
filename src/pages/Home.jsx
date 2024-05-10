@@ -23,10 +23,10 @@ export const Home = () => {
 					<img src="/images/cloud3.png" alt="cloud3" className="cloud3" />
 					<img src="/images/cloud4.png" alt="cloud4" className="cloud4" />
 					<img src="/images/bg-lines.png" alt="bg-lines" className="bg-lines" />
-					<img src="/images/image-second.png" alt="" className="second-image" />
 					<img src="/images/vector1.png" alt="vector1" className="vector1" />
-					<img src="/images/vector2.png" alt="vector2" className="vector2" />
+					<img src="/images/image-second.png" alt="" className="second-image" />
 					<div className="content">
+						<img src="/images/vector2.png" alt="vector2" className="vector2" />
 						<h4>About Us</h4>
 						<h1>Lorem Ipsum Is Simply Dummy text</h1>
 						<p>
@@ -38,7 +38,7 @@ export const Home = () => {
 				</section>
 
 				{/* ------------------- section3 / why choose us ---------------- */}
-				<section className="why-choose-us" >
+				<section className="why-choose-us">
 					<img src="/images/bg-shade1.png" alt="bg-shade" className="bg-shade1" />
 					<img src="/images/cloud-md-right.png" alt="cloud-right" className="cloud-right" />
 					<img src="/images/cloud-lg-left.png" alt="cloud-left" className="cloud-left" />
@@ -70,7 +70,7 @@ export const Home = () => {
 				</section>
 
 				{/* ------------------- section5 / get in touch  ---------------- */}
-				<section className="get-in-touch" id="contact-us" >
+				<section className="get-in-touch" id="contact-us">
 					<h1>Get In Touch</h1>
 
 					<div className="content">
@@ -87,8 +87,6 @@ export const Home = () => {
 										Street 000
 									</span>
 								</h4>
-								{/* <span></span> */}
-								{/* <span>Street 000</span> */}
 							</div>
 							<div className="row2 row">
 								<img src="/icons/icon2.png" alt="" />
@@ -125,10 +123,10 @@ export const Home = () => {
 
 					<h1 className="contact-us">Contact Us</h1>
 					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. LoremIpsum has <br /> beenthe
-						industry's standard dummy text ever since the1500s
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. LoremIpsum has <br />{" "}
+						beenthe industry's standard dummy text ever since the1500s
 					</p>
-          <Button text='Contact Us' /> 
+					<Button text="Contact Us" />
 				</section>
 			</div>
 		</Container>

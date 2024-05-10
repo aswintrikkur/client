@@ -1,14 +1,14 @@
 .header-container {
+
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: center;	
+	padding: 30px 54px 0 140px;
 
-	padding: 30px 54px 0 170px;
-	font-family: "rosemary";
+	font-family: "rosemary", sans-serif;
 	color: var(--highlight-primary);
 
 	position: relative;
-	// z-index: 2;
 
 	.cloud1 {
 		position: absolute;
@@ -20,6 +20,10 @@
 	.logo {
 		z-index: 2;
 	}
+	.menu-bar {
+		display: none;
+		z-index: 2;
+	}
 	.navbar {
 		z-index: 2;
 		margin-left: auto;
@@ -28,37 +32,76 @@
 		display: flex;
 		align-items: center;
 		gap: 62px;
-		
 		font-size: 16px;
+
 		a {
 			color: var(--highlight-primary);
-			// color: red;
 			text-decoration: none;
-			font-family: "rosemary";
+			font-family: "rosemary", sans-serif;
 			font-size: 16px;
 			line-height: 22px;
-			
-			&:first-child {
-					padding: 4px 22px;
-					border-radius: 20px;
-					background-color: var(--highlight-primary);
-				color: white;
-			}
-			
-			&:hover{
-				cursor: pointer;
-			}
-			&:active{
+
+			&:first-child, &:active {
 				padding: 4px 22px;
 				border-radius: 20px;
 				background-color: var(--highlight-primary);
 				color: white;
+			}
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		.lan {
+			font-size: 12px;
+			z-index: 2;
+		}
+	}
+	.active{
+		display: flex !important;
+	}
+}
+
+// =========================== break point 1025px ================================
+@media only screen and (max-width: 1025px) {
+	.header-container {
+		 	padding:  30px 50px  ;
+		.cloud1 {
+			width: 100%;
+			height: 160%;
+			object-fit: cover;
+
+		}
+		.logo{
+			flex: 1;
+		}
+		.menu-bar {
+			display: inline;
+			flex: 1;
+			text-align: end;
+		}
+		.navbar {
+			display: none;
+			// display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-top: 50px;
+			gap: 62px;
+			position: absolute;
+			position: fixed;
+			z-index: 20;
+			top: 80px;
+			// top: 0px;
+			left: 50%;
+			translate: -50%;
+
+			height: 110vh;
+			width: 100vw;
+			background-color: #fff;
+
+
+			.lan {
 
 			}
 		}
-	}
-	.lan {
-		font-size: 12px;
-		z-index: 2;
 	}
 }

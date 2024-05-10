@@ -1,62 +1,74 @@
-.footer-contaier{
+.footer-contaier {
+	min-height: 334px;
+	background-color: rgba(218, 227, 179, 1);
+	padding: 60px 170px 30px 170px;
 
-    height: 334px;
-    background-color: rgba(218, 227, 179, 1);
-    padding: 60px 170px 30px 170px;
+	.row1 {
+		display: flex;
+		gap: 108px;
 
-    .row1{
+		h3 {
+			font-size: 20px;
+			color: rgba(68, 79, 37, 1);
+			margin-bottom: 18px;
+		}
+		h4 {
+			color: rgba(83, 98, 41, 1);
+			font-size: 14px;
+			line-height: 20px;
+		}
 
-        display: flex;
-        gap: 108px;
+		.col1 {
+			width: 300px;
 
-        h3{
-            font-size: 20px;
-            color: rgba(68, 79, 37, 1);
-            margin-bottom: 18px;
-        }
-        h4{
-            color: rgba(83, 98, 41, 1);
-            font-size: 14px;
-            line-height: 20px;
-        }
+			p {
+				font-size: 14px;
+				margin-top: 37px;
+				margin-bottom: 26px;
+				color: rgba(68, 79, 37, 1);
+			}
+			> img {
+				margin-right: 22px;
+			}
+		}
+		.col2 {
+			> div {
+				display: flex;
+				align-items: start;
+				justify-content: start;
+				gap: 6px;
+				margin-bottom: 20px;
+			}
+		}
+		.col3 {
+			margin-left: 170px;
+		}
+	}
+	hr {
+		border-top: 0.5px solid rgba(59, 68, 35, 1);
+	}
+	.row2 {
+		text-align: center;
+		padding-top: 10px;
+		font-size: 13px;
+		color: rgba(68, 79, 37, 1);
+	}
+}
 
-        .col1{
-            width: 300px;
+@media only screen and (max-width: 1025px) {
+	.footer-contaier {
+		// padding: 0;
+        padding: 10% 20%;
+		// background-color: red;
 
-            p{
-                font-size: 14px;
-                margin-top: 37px;
-                margin-bottom: 26px;
-                color: rgba(68, 79, 37, 1);
-            }
-            >img{
-                margin-right: 22px;
-            }
-        }
-        .col2{
+		.row1 {
+            flex-wrap: wrap;
+			gap: 80px;
 
-            >div{
-                display: flex;
-                align-items: start;
-                justify-content: start;
-                gap: 6px;
-                margin-bottom: 20px;
+			.col3 {
+				margin-left: 0px;
+			}
+		}
 
-            }
-
-        }
-        .col3{
-            margin-left: 170px;
-
-        }
-    }
-    hr{
-        border-top: .5px solid rgba(59, 68, 35, 1);
-    }
-    .row2{
-        text-align: center;
-        padding-top: 10px;
-        font-size: 13px;
-        color: rgba(68, 79, 37, 1);
-    }
+	}
 }
