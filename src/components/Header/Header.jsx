@@ -10,7 +10,7 @@ export const Header = () => {
 	};
 
 	return (
-		<div className="header-container">
+		<div className={`header-container ${isMenuOpen && "fixed"} `}>
 			<img className="cloud1" src="/images/cloud1.png" alt="cloud1" />
 			<div className="logo">
 				<img src="/images/logo.png" alt="logo" />
@@ -27,13 +27,7 @@ export const Header = () => {
 				<a href="#contact-us">Contact Us</a>
 				<div className="lan">
 					<p>English</p>
-					<Switch
-						className="toggle-button"
-						checked
-						checkedIcon
-						onColor="#A4CAD3"
-						onHandleColor="#2F535D"
-					/>
+					<Switch className="toggle-button" checked checkedIcon onColor="#A4CAD3" onHandleColor="#2F535D" />
 				</div>
 			</div>
 		</div>
